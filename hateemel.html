@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Implementasi Algoritma DDA dan Bresenham</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <br>
+    Posisi Mouse 
+    X: <label id="xhover"></label>&nbsp;
+    Y: <label id="yhover"></label>
+    <br>
+    <div>
+    X1: <label id="x1"></label>&nbsp;
+    Y1: <label id="y1"></label>
+    </div>
+    <div>
+    X2: <label id="x2"></label>&nbsp;
+    Y2: <label id="y2"></label>
+    </div>
+   
+
+    <input type="button" id="clear" value="clear">
+    <br><input type="radio" onClick="algSelectChange(this)" name="algSelect" value="DDA" checked="checked" >DDA
+    <br><input type="radio" onClick="algSelectChange(this)" name="algSelect" value="Bresenham">Bresenham
+    <hr>
+    X<input type="number" min="0" max="300" style='width:40px;margin:5px' id="boxX">
+    Y<input type="number" min="0" max="300" style='width:40px;margin:5px' id="boxY">
+    <input type="button" onClick="Translation()" value="Translasi" />
+    
+    <br>
+    <br>
+    <br>
+    
+    
+    <script  src="js/index.js"></script>
+
+    </body>
+</html>
